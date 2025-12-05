@@ -5,66 +5,83 @@
     <title>Application 6 Demo – Jan Iglesias Morales</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background: #eef2f7;
-            color: #222;
+            background: #0d1117; /* deep slate */
+            color: #e6edf3;        /* GitHub dark mode text */
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         }
 
         header {
-            background: linear-gradient(135deg, #3b82f6, #1e40af);
-            color: white;
+            background: linear-gradient(135deg, #0a0f1a, #0f1c2e);
+            border-bottom: 1px solid #1f6feb;
             padding: 40px 20px;
             text-align: center;
         }
 
         header h1 {
+            font-size: 2.4rem;
             margin: 0;
-            font-size: 2.2rem;
-            font-weight: 600;
+            color: #58a6ff;
+            letter-spacing: 1px;
         }
 
         header p {
-            margin-top: 8px;
-            font-size: 1.1rem;
+            margin-top: 10px;
+            font-size: 1.15rem;
             opacity: 0.9;
         }
 
         .container {
             max-width: 900px;
-            margin: 40px auto;
-            background: white;
-            padding: 40px 45px;
+            margin: 60px auto;
+            background: #161b22;
+            padding: 40px 50px;
             border-radius: 14px;
-            box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.45);
+            border: 1px solid #21262d;
         }
 
         h2 {
-            color: #1e3a8a;
+            color: #58a6ff;
             margin-top: 0;
+            border-left: 4px solid #1f6feb;
+            padding-left: 12px;
         }
 
         p {
             line-height: 1.7;
             font-size: 1.05rem;
+            color: #c9d1d9;
         }
 
         iframe {
             display: block;
-            margin: 25px auto;
-            border-radius: 12px;
             width: 100%;
             max-width: 800px;
             height: 450px;
+            margin: 30px auto;
+            border-radius: 10px;
+            border: 2px solid #1f6feb;
+            box-shadow: 0 0 15px rgba(31, 111, 235, 0.4);
         }
 
         .footer {
             text-align: center;
-            padding: 20px;
-            color: #555;
+            padding: 25px;
             font-size: 0.95rem;
+            color: #8b949e;
             margin-top: 40px;
+        }
+
+        /* Subtle fade animation for the container */
+        .container {
+            animation: fadeIn 0.9s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
@@ -72,39 +89,39 @@
 
 <header>
     <h1>Application 6 Project Demo</h1>
-    <p>by Jan Iglesias Morales</p>
+    <p>Jan Iglesias Morales</p>
 </header>
 
 <div class="container">
     <h2>Project Overview</h2>
 
     <p>
-        For this assignment, I worked within a simple “dream job” scenario. 
-        The idea was to imagine being hired as a new software engineer at a tech company in Central Florida. 
-        My task was to help develop a real-time system — a type of system where timing is just as important as getting the correct result.
+        For this assignment, I stepped into a fictional scenario where I was hired as a new software 
+        engineer at a tech company in Central Florida. My responsibility was to help create a real-time 
+        system — a type of system where reacting quickly is just as important as producing the right result.
     </p>
 
     <p>
-        To make the scenario feel more realistic, it was placed in the healthcare technology world. 
-        Devices like patient monitors, insulin pumps, and even pacemakers all rely on software that must react quickly and reliably. 
-        If a heart rate sensor detects something dangerous, for example, the system needs to respond within seconds, not minutes.  
-        Real-time systems like these help ensure accuracy, safety, and quick reactions when it matters most.
+        To make the experience more realistic, the project focused on the healthcare technology field. 
+        Devices like heart monitors, insulin pumps, and pacemakers all depend on software that must react 
+        within strict time limits. If a patient’s heart rate spikes or drops suddenly, the system needs to 
+        respond almost immediately. These kinds of devices rely on real-time systems to help maintain safety, 
+        accuracy, and reliability.
     </p>
 
     <p>
-        This project gave me hands-on experience building a small version of a real-time application, practicing how timing, responsiveness, 
-        and predictable behavior all come together in embedded systems.
+        Application 6 let me build a small real-time application of my own, giving me hands-on experience 
+        with tasks, timing, and predictable behavior — all key parts of embedded systems engineering.
     </p>
 
     <h2>Video Demonstration</h2>
 
-    <!-- Replace VIDEO_ID with your real YouTube video ID -->
+    <!-- Replace VIDEO_ID with your YouTube video ID -->
     <iframe
         src="https://www.youtube.com/embed/VIDEO_ID"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
     </iframe>
-
 </div>
 
 <div class="footer">
