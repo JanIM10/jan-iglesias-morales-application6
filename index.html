@@ -7,8 +7,8 @@
         body {
             margin: 0;
             padding: 0;
-            background: #0d1117; /* deep slate */
-            color: #e6edf3;        /* GitHub dark mode text */
+            background: #0d1117;
+            color: #e6edf3;
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         }
 
@@ -74,7 +74,6 @@
             margin-top: 40px;
         }
 
-        /* Subtle fade animation for the container */
         .container {
             animation: fadeIn 0.9s ease-in-out;
         }
@@ -96,20 +95,20 @@
     <h2>Project Overview</h2>
 
     <p>
-        For this assignment, I built a small healthcare monitoring system using an Arduino microcontroller and FreeRTOS. 
-        The system tracks a patient’s heart rate and blood oxygen levels in real-time, triggering alarms if the readings 
+        For this assignment, I built a small healthcare monitoring system using an ESP32 microcontroller and FreeRTOS. 
+        The system tracks a patient’s heart rate and blood oxygen levels in real time, triggering alarms if the readings 
         become dangerously high or low. 
     </p>
 
     <p>
-        The project simulates a real-world critical-care scenario where timing is everything. 
-        Heart rate and oxygen monitoring tasks have strict deadlines — if the system reacts too slowly, 
-        it could put a patient at risk. There’s also a button to acknowledge alarms, LEDs to indicate system status, 
+        The project simulates a real-world critical care scenario where timing is very important. 
+        Heart rate and oxygen monitoring tasks have strict deadlines, so if the system reacts too slowly, 
+        it could put a patient at risk. There is also a button to acknowledge alarms, LEDs to indicate system status, 
         and logging to keep track of vital readings over time.
     </p>
 
     <p>
-        This project helped me practice building a real-time system with multiple tasks, synchronization, and safety-critical timing, 
+        This project helped me practice building a real-time system with multiple tasks, synchronization, and safety critical timing, 
         giving hands-on experience similar to what engineers face in medical device development.
     </p>
 
